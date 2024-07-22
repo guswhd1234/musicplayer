@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Music Player </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="player_body">
+    <div class="top">
+    <h2>MUSIC PLAYER</h2>
+    </div>
+    <div class="album">
+    <img src="images/album1.jpg" alt="Alone -- Color Out">
+    </div>
+    <div class="volume">
+    <span class="material-symbols-outlined" id="btn">volume_up</span>
+    <button class="volumeBtn"><input type="range" id="rangebar"></button>
+    </div>
+    <div class="info">
+    <p class="name">Alone</p>
+    <p class="artist">Color Out</p>
+    </div>
+    <div class="etc">
+    <div class="play_list">
+        <ul></ul>
+    </div>
+    </div>
+    <div class="progress">
+    <div class="bar"><audio src="" id="mainAudio"></audio></div>
+    <div class="timebox">
+        <span class="current">0:00</span><span class="duration">0:00</span>
+    </div>
+    </div>
+    <div class="controls"> 
+    <span id="repeatBtn" class="material-icons">repeat</span>
+    <span id="prevBtn" class="material-icons">skip_previous</span>
+    <span id="playBtn" class="material-icons">play_arrow</span> 
+    <span id="nextBtn" class="material-icons">skip_next</span>
+    <span id="listBtn" class="material-icons">queue_music</span>
+    </div>
+</div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
